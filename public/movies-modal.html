@@ -1,0 +1,55 @@
+<!-- this is a structure of Bootstrap Modal -->
+<div class="modal fade" id="movieModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-center">
+                <h3 class="modal-title text-light" id="movieTitle">Modal title</h3>
+                <button type="button" class="close bg-light" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row text-center">
+                    <div class="col-5">
+                        <img class="img-fluid img-thumbnail" id="moviePoster">
+                    </div>
+                    <div class="col-7">
+                        <table class="table table-hover table-responsive table-sm">
+                            <tr>
+                                <td><span class="badge badge-pill badge-dark font-weight-bold">Genre</span></td>
+                                <td id="genre"></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-pill badge-dark font-weight-bold">Director</span></td>
+                                <td id="director" style=' width: 200px; word-break: break-all; word-wrap: break-word;'></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-pill badge-dark font-weight-bold">Release</span></td>
+                                <td id="release"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button type="button" class="btn btn-warning" id="buy" onClick="buyTicket()">Buy Tickets @ SHAW</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12 px-3"><span class="badge badge-pill badge-dark font-weight-bold float-left">Story </span>
+                    <p id="story"></p>
+                </div>
+                <div class="col-xs-12 px-3"><span class="badge badge-pill badge-dark font-weight-bold float-left">Cast </span>
+                    <p id="cast"></p>
+                </div>
+                <div class="col-xs-12 px-3"><span class="badge badge-pill badge-danger font-weight-bold float-left">Advice </span>
+                    <p id="advice"></p>
+                </div>
+                <div class="col-xs-12 px-3 text-center">
+                    <iframe src="" frameborder="0" allowfullscreen id="trailer1"></iframe>
+                    <iframe src="" frameborder="0" allowfullscreen id="trailer2"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
